@@ -15,7 +15,7 @@
 
                  <nav class="menu">
 
-                  <div class="menu-burger__header">
+                  <div class="menu__burger__header">
                   <span></span>
                   </div>
 
@@ -35,13 +35,13 @@
        </div>
 
   </header>
-
+<!--
 <div class="popup">
 
       <div class="popup__content">
 <button type="button" class="popup__close"></button>
-        <div class="main__trands__head">
-               <h4>Ваш фидбэк</h4>
+        <div class="popup__content__head">
+               <h4>Ваш фидбек</h4>
         </div>
 
         <div class="popup__box">
@@ -77,69 +77,69 @@
              <legend class="question">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</legend>
             <textarea class="textarea" placeholder="Может больше рецептов?" required></textarea>
            </div>
-           <button class="button__email" type="submit" id="email__btn">Отправить</button>
+           <button class="popup__button" type="submit" id="email__btn">Отправить</button>
           </form>
 
         </div>
       </div>
 </div>
 
+-->
+  <section class="trends">
 
-  <section class="trands">
-
-    <div class="main__trands__head">
+    <div class="trends__head">
            <h3>Сейчас в тренде</h3>
     </div>
 
 
-    <div class="main__trands">
+    <div class="main__trends">
 
 
-     <div class="trand">
-         <img src="images/trend1.jpg" alt="" class="trand__img">
-         <div class="trand__filtr"></div>
+     <div class="trend">
+         <img src="images/trend1.jpg" alt="" class="trend__img">
+         <div class="trend__filtr"></div>
          <div class="trend__box">
            <ul class="main__list">
-                <li class="main__list__item"><a class="main__item__link" href="#0">Lifestyle</a></li>
-                <li class="main__list__item"><a class="main__item__link" href="#0">Interior</a></li>
+                <li class="main__list__item"><a class="main__item__link"  id="trend__link" href="#0">Lifestyle</a></li>
+                <li class="main__list__item"><a class="main__item__link" id="trend__link" href="#0">Interior</a></li>
           </ul>
-          <h3 class="main__trand">Сейчас в тренде: сад на подоконнике</h3>
+          <h3 class="main__trend">Сейчас в тренде: сад на подоконнике</h3>
          </div>
      </div>
-     <div class="trand">
+     <div class="trend">
          <img src="images/trend2.jpg" alt=""
-         class="trand__img">
-         <div class="trand__filtr"></div>
+         class="trend__img">
+         <div class="trend__filtr"></div>
          <div class="trend__box">
            <ul class="main__list">
                 <li class="main__list__item"><a class="main__item__link" href="#0">Food</a></li>
                 <li class="main__list__item"><a class="main__item__link" href="#0"></a></li>
           </ul>
-          <h3 class="main__trand">Сыры на красивых картинках из интернета: Какие они на вкус?</h3>
+          <h3 class="main__trend">Сыры на красивых картинках из интернета: Какие они на вкус?</h3>
          </div>
      </div>
-     <div class="trand">
+     <div class="trend">
         <img src="images/trend3.jpg" alt=""
-        class="trand__img">
-        <div class="trand__filtr"></div>
+        class="trend__img">
+        <div class="trend__filtr"></div>
         <div class="trend__box">
           <ul class="main__list">
                <li class="main__list__item"><a class="main__item__link" href="#0">Lifestyle</a></li>
                <li class="main__list__item"><a class="main__item__link" href="#0">Travel</a></li>
          </ul>
-         <h3 class="main__trand">Собираемся в первый поход в горы</h3>
+         <h3 class="main__trend">Собираемся в первый поход в горы</h3>
         </div>
      </div>
-     <div class="trand">
+     <div class="trend">
         <img src="images/trend4.jpg" alt=""
-        class="trand__img">
-        <div class="trand__filtr"></div>
+        class="trend__img">
+        <div class="trend__filtr"></div>
         <div class="trend__box">
           <ul class="main__list">
                <li class="main__list__item"><a class="main__item__link" href="#0">Food</a></li>
                <li class="main__list__item"><a class="main__item__link" href="#0">Health</a></li>
          </ul>
-         <h3 class="main__trand">Сейчас в тренде: Сколько витамина С в лимонах?</h3>
+         <h3 class="main__trend">Сейчас в тренде: Сколько витамина С в лимонах?</h3>
         </div>
      </div>
       </div>
@@ -271,32 +271,6 @@
        </div>
      </div>
 
-  <div class="main__news">
-
-      <div class="main__news__img">
-
-         <img class="main__news__pic" src="images/last-post4.jpg" alt="photo">
-
-      </div>
-
-      <div class="main__news__text">
-           <ul class="main__list">
-                <li class="main__list__item"><a class="main__item__link" href="#0">Lifestyle</a></li>
-                <li class="main__list__item"><a class="main__item__link" href="#0">Food</a></li>
-           </ul>
-        <a class="main__news__link" href="#0">
-         <h3 class="main__news__title">Наукоёмкий подход к кулинарии</h3></a>
-        <div class="news__text__meta">
-               <time datetime="2019" class="date"> 10 июня 2019</time>
-               <a class="author">Неизвестный автор</a>
-        </div>
-
-                   <p class="main__news__list">Узнаем основы проектирования новых пищевых и около-пищевых опытов, вскроем физику,химию и микробиологию еды.</p>
-
-     </div>
-  </div>
-
-
   </main>
 
   <aside class="aside">
@@ -424,66 +398,67 @@
 </section>
 
 <section class="footer__shop">
-  <div class="main__trands__head">
+  <div class="footer__head">
          <h3>Наши изделия</h3>
   </div>
 
   <div class="shop__items">
-      <div class="shop__box">
 
+      <div class="shop__item">
       <picture>
         <source media="(max-width: 640px)" srcset="images/shop-item-mobile1.jpg">
       <source media="(max-width: 1199px)" srcset="images/shop-item-tablet1.jpg">
         <img src="images/shop-item-desk1.jpg"
       alt="" class="shop__img">
     </picture>
-
+      <div class="shop__box">
        <h3 class="shop__news">Подушки на диван</h3>
-       <p class="main__news__list">Набор из двух подушек с модными принтами. Видео о создании<a class="main__item__link" href="#0"> здесь</a>.</p>
+       <p class="shop__list">Набор из двух подушек с модными принтами. Видео о создании<a class="main__item__link" href="#0"> здесь</a>.</p>
        <div class="price">
-       <div class="first__price"><s>1000P</s>
-       <p class="second__price">800P</p></div>
+       <div class="first__price"><s>1000₽</s>
+       <p class="second__price">800₽</p></div>
        <div class=""><button class="button__shop"  type="submit">В магазин</button></div>
+       </div>
        </div>
       </div>
 
-       <div class="shop__box">
-
+       <div class="shop__item">
          <picture>
            <source media="(max-width: 640px)" srcset="images/shop-item-mobile2.jpg">
              <source media="(max-width: 1199px)" srcset="images/shop-item-tablet2.jpg">
          <img src="images/shop-item-desk2.jpg" alt=""
          class="shop__img">
          </picture>
-
+        <div class="shop__box">
         <h3 class="shop__news">Кукла «Зайчик»</h3>
-        <p class="main__news__list">Интерьерная рукодельная кукла«Зайчик»,созданию которой посвящена<a class="main__item__link" href="#0"> весенняя серия постов</a> в блоге инесколько подкастов</p>
+        <p class="shop__list">Интерьерная рукодельная кукла«Зайчик»,созданию которой посвящена<a class="main__item__link" href="#0"> весенняя серия постов</a> в блоге инесколько подкастов</p>
         <div class="price">
         <div class="first__price"><s></s>
-        <p class="second__price">3500P</p></div>
+        <p class="second__price">3500₽</p></div>
         <div class=""><button class="button__shop"  type="submit">В магазин</button></div>
         </div>
        </div>
+       </div>
 
-      <div class="shop__box">
+
+      <div class="shop__item">
         <picture>
-
           <source media="(max-width: 640px)" srcset="images/shop-item-mobile3.jpg">
          <source media="(max-width: 1199px)" srcset="images/shop-item-tablet3.jpg">
         <img src="images/shop-item-desk3.jpg"
         alt=""
         class="shop__img">
-
       </picture>
+      <div class="shop__box">
        <h3 class="shop__news">Шестиугольная рамка</h3>
-       <p class="main__news__list">Необычная рамка для украшения дома из видео <a class="main__item__link" href="#0">«Как сделать рамку из подручных средств за 30 минут»</a></p>
+       <p class="shop__list">Необычная рамка для украшения дома из видео <a class="main__item__link" href="#0">«Как сделать рамку из подручных средств за 30 минут»</a></p>
        <div class="price">
-       <div class="first__price"><s>500P</s>
-       <p class="second__price">400P</p></div>
+       <div class="first__price"><s>500₽</s>
+       <p class="second__price">400₽</p></div>
        <div class=""><button class="button__shop"  type="submit">В магазин</button></div>
        </div>
       </div>
-
+    </div>
 </div>
 
 </section>
