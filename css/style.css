@@ -169,7 +169,7 @@ border: none;
 /*===========POPUP============*/
 /*==========HEADER==========*/
 .header{
-  padding: 25px 0 124px;
+  padding: 25px 15px 124px;
   margin-bottom: 58px;
 }
 .header{
@@ -198,8 +198,7 @@ border: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  max-width: 1230px;
-  padding: 0 30px;
+  max-width: 1170px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -252,6 +251,7 @@ border: none;
   flex-wrap: wrap;
   justify-content: space-between;
   max-width: 1200px;
+
   padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
@@ -536,12 +536,12 @@ margin: 56px 0 58px;
 
   .main__trends{
       display: flex;
-      max-width: 100%;
+      min-width: 100%;
   }
 
   .trend{
     position: relative;
-    width: 25%;
+    max-width: 25%;
   }
 
   .trend__filtr{
@@ -568,7 +568,7 @@ margin: 56px 0 58px;
   .trend__box{
     position: absolute;
     max-height: 285px;
-    border:  3px solid #b59f5b;
+    border:  3px solid rgba(181, 159, 91, 0.5);
     padding: 8%;
     bottom: 15px;
     left: 20px;
@@ -580,7 +580,7 @@ margin: 56px 0 58px;
   }
 
   .trends__head{
-    width: 100%;
+    min-width: 100%;
     font-weight: bold;
     font-size: 16px;
     line-height: 1.2;
@@ -650,12 +650,12 @@ margin: 56px 0 58px;
   .shop__box{
     max-width: 100%;
     flex-grow: 1;
-    border: 3px solid #b59f5b;
+    border: 3px solid rgba(181, 159, 91, 0.5);
     padding: 20px;
   }
 
   .footer__shop{
-    width: 1170px;
+    max-width: 1170px;
     margin-bottom: 65px;
   }
 
@@ -723,7 +723,7 @@ margin: 56px 0 58px;
     display: block;
     width: 100%;
     padding-bottom: 11px;
-    margin-bottom: 43px;
+    margin-bottom: 42px;
   }
 
   .main__news:nth-last-child(n+2){
@@ -735,7 +735,7 @@ margin: 56px 0 58px;
 
   .page{
     max-width: 770px;
-    padding: 0 35px;
+    padding: 0 34px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -752,7 +752,7 @@ margin: 56px 0 58px;
 .main__news__text{
   max-width: 100%;
   padding-left: 0;
-  padding-top: 5px;
+  padding-top: 7px;
 }
 
 .main__news__title{
@@ -812,7 +812,7 @@ margin: 56px 0 58px;
 
  /*======BURGER===========*/
   .trends{
-    margin-bottom: 48px;
+    margin-bottom: 46px;
   }
 
   .trends__head{
@@ -823,22 +823,11 @@ margin: 56px 0 58px;
      max-width: 100%;
      display: flex;
       flex-wrap: wrap;
-    justify-content:  center;
-  }
-
-  .trend__filtr{
-   width: 100%;
-   height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #000000;
-    opacity: 0.5;
+     justify-content:  center;
   }
   .trend{
-    max-height: 240px;
+    max-height: 247px;
+    max-width: 49%;
   }
 
   .trend__img{
@@ -859,7 +848,7 @@ margin: 56px 0 58px;
 
   .trend__box{
     position: absolute;
-    border:  3px solid #b59f5b;
+    border:  3px solid  rgba(181, 159, 91, 0.5);
     padding: 30px;
     bottom: 15px;
     left: 15px;
@@ -880,9 +869,9 @@ margin: 56px 0 58px;
   }
 
   .shop__item{
-    max-width: 50%;
+    max-width: 49%;
     min-width: 280px;
-    margin-bottom: 10px;
+    margin-bottom: 32px;
   }
 
   .shop__img{
@@ -1015,7 +1004,7 @@ margin: 56px 0 58px;
 }
 
 .trend{
-  width: 100%;
+  min-width: 100%;
   height: 230px;
   margin-top:3px;
 }
@@ -1135,6 +1124,7 @@ margin: 56px 0 58px;
 
 .shop__item{
   max-width: 100%;
+  margin-bottom: 26px;
 }
 
 .shop__list{
@@ -1143,14 +1133,14 @@ margin: 56px 0 58px;
 
 }
 
-@media (min-width: 641px) and (max-width: 1199px)
+@media (min-width: 641px) and (max-width: 1200px)
 and (orientation: portrait){
  .trend{
-   width: 49%;
+   max-width: 49%;
  }
 
  .trend:nth-child(odd) {
-     margin-right: 0.3;
+     margin-right: 0.3%;
  }
 
 .main__trends{
@@ -1164,7 +1154,7 @@ and (orientation: portrait){
 
 }
 
-@media(min-width: 641px) and (max-width: 1199px)
+@media(min-width: 641px) and (max-width: 1200px)
   and (orientation: landscape){
   .main__trends{
     flex-wrap: nowrap;
@@ -1216,7 +1206,7 @@ and (orientation: portrait){
    }
 
     .trend{
-      width: 49%;
+      min-width: 49%;
     }
 
     .trend__box{
